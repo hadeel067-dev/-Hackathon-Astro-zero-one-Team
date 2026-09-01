@@ -49,7 +49,7 @@ header {
 
 .navbar a:hover,
 .navbar .home-active,
-.navbar .products.html {
+.navbar .products-active{
     background: #243B37;
     border-radius: 5rem;
     color: #F6FAFF;
@@ -61,6 +61,10 @@ header {
     align-items: center;
     column-gap: 0.5rem;
     cursor: pointer;
+    font-size: 25px;
+}
+.profile span{
+    color: #053930;
 }
 
 .logo {
@@ -95,6 +99,41 @@ main {
 
 
 
+}
+.mainlogo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 7px;
+    margin-right: -600px;
+    flex-wrap: wrap;
+
+}
+
+.mainlogo h1 {
+    font-size: 60px;
+}
+
+.mainlogo p {
+    font-size: 20px;
+    text-wrap: wrap;
+
+}
+
+.btn-main {
+    font-size: 18px;
+    font-weight: 600;
+    height: 50px;
+    width: 160px;
+    border: 2px #053930;
+    border-radius: 10px;
+    background: #053930;
+    color: #F8FAFE;
+
+}
+
+.fa-arrow-left {
+    margin-top: 6px;
 }
 
 footer{
@@ -141,48 +180,70 @@ color: white;
     align-items: center;
 }
 .photo{ margin-bottom: 15px;}
-span{ color: white;}
+
+span{
+    
+    color: white;} 
 
 
 
-.mainlogo {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 7px;
-    margin-right: -600px;
-    flex-wrap: wrap;
+
+
+.cards{
+    display:flex;
+    justify-content:space-around ;
+    margin-bottom: 20px;
+
 
 }
+.card{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    transition: 0.3s;
+    transform: translateY(-7px);
+    width:350px;
+    height: fit-content;
+   border-radius: 19px;
+    min-height: 45px;
+    box-sizing: border-box;
+    align-items: center;
+    padding: 5px;
+}
+.card img{
+    margin-bottom: 60px;
+    width:100%;
+    margin-bottom:2px;
+    border-radius: 19px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.card button{
+    width:100% ;
+    margin-bottom: 0;
+    border-radius: 19px;
+    background-color:#053930;
+    color:#F6FAFF;
+    padding:5px;
+    height: fit-content;
+    border:none;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 
-.mainlogo h1 {
-    font-size: 60px;
+}
+.card p{
+    text-align: center;
+}
+.card i{
+    margin-right: 5px;
+}
+.h3{
+    color:#053930
 }
 
-.mainlogo p {
-    font-size: 20px;
-    text-wrap: wrap;
 
-}
-
-.btn-main {
-    font-size: 18px;
-    font-weight: 600;
-    height: 50px;
-    width: 160px;
-    border: 2px #053930;
-    border-radius: 10px;
-    background: #053930;
-    color: #F8FAFE;
-
-}
-
-.fa-arrow-left {
-    margin-top: 6px;
-}
 #send{
     background-color: #053930;
     border: 1px solid #053930;
+<<<<<<< HEAD
 }
 .icon{
    display: flex;
@@ -212,3 +273,7 @@ span{ color: white;}
 .bags{ background-color: #F7EBDF;}
 .gifts{ background-color: ;}
 .
+=======
+
+}
+>>>>>>> 13bceb516d11799acf72815dbb67b41ad292027d
