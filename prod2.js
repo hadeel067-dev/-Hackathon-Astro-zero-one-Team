@@ -1,120 +1,91 @@
-<!DOCTYPE html>
+const productsContainer = document.getElementById("productsContainer");
 
-<html lang="ar" dir="rtl">
+function displayProducts(productsToDisplay) {
 
-<head>
+    productsContainer.innerHTML = "";
 
-    <meta charset="UTF-8">
+    productsToDisplay.forEach(product => {
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        const card = document.createElement("div");
 
-    <title>المنتجات | أثر</title>
+        card.classList.add("product-card");
 
-   
-    <link rel="stylesheet" href="style3.css">
+        card.innerHTML = `
+            <img src="${product.Image}" alt="${product.name}">
 
-    <script src="./products.js" defer></script>
-    <script src="./prod2.js" defer></script>
-    <script src="./main.js" defer></script>
-    <script src="./cart.js" defer></script>
-    <script src="./divid.js" defer></script>
+            <h3>${product.name}</h3>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
+            <p>${product.description}</p>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
-</head>
+            <strong>$${product.price}</strong>
 
-<body>
+            <button class="add-to-card">
+                أضف إلى السلة
+                <i class="fa-solid fa-cart-shopping"></i>
+            </button>
+        `;
 
-    <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+        productsContainer.appendChild(card);
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>اثر</title>
-    <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="./style2.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
-    <script src="./main.js" defer></script>
-</head>
+        const addButton = card.querySelector(".add-to-card");
 
-<body>
-    <!-- mayar header  -->
+        addButton.onclick = function () {
 
-    <header>
-        <div class="right-bar">
-            <a class="logo"><i class="fa-brands fa-pagelines" style="color: rgb(6, 60, 49);"></i>
-               جوف
-            </a>
-        </div>
+            let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
+       
+            cart.push(product);
 
-        <ul class="navbar">
-            <li><a href="./home.html" class="home-active">الرئيسية</a></li>
-            <li><a href="./products.html">المنتجات</a></li>
-           
-        </ul>
-        <div class="search">
-            <input type="text" id="search-box" placeholder="ابحث عن المنتج..." />
-            <button id="search-button"><i class="fa-solid fa-magnifying-glass"
-                    style="color: rgb(6, 60, 49);"></i></button>
-        </div>
+            addButton.onclick = function () {
 
-        <div class="profile">
-            <i class="fa-solid fa-user" style="color: rgb(6, 60, 49);"></i>
-            <a href="cart.html">
-                <i class="fa-solid fa-cart-shopping " style="color: rgb(6, 60, 49);"></i>
-                <span id="cart-count">0</span>
-            </a>
-            
-        </div>
+                let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+                let existingProduct = cart.find(item => item.id === product.id);
+
+                if (existingProduct) {
+
+                    existingProduct.quantity += 1;
+
+                } else {
+
+                    cart.push({
+                        ...product,
+                        quantity: 1
+                    });
+
+                }
+
+                localStorage.setItem("cart", JSON.stringify(cart));
+
+                updateCartCount();
+            };
+
+       
+            localStorage.setItem("cart", JSON.stringify(cart));
+
+            updateCartCount();
+        };
+    });
+}
 
 
-    </header>
-    <section class="top-prod">
 
-        <h3>تسوّق حسب الفئة</h3>
+function updateCartCount() {
 
-        <div class="categories">
+    let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
-            <div class="cloths category-btn" data-category="ملابس">
+    const cartCount = document.getElementById("cart-count");
 
-                <i class="fa-solid fa-vest"></i>
+    if (cartCount) {
+        cartCount.innerText = cart.length;
+    }
+}
 
-                <p>ملابس</p>
 
-            </div>
 
-            <div class="bags category-btn" data-category="إكسسوارات">
+displayProducts(products);
 
-                <i class="fa-solid fa-bag-shopping"></i>
 
-                <p>إكسسوارات</p>
+updateCartCount();
 
-            </div>
 
-            <div class="gifts category-btn" data-category="هدايا">
-
-                <i class="fa-solid fa-gift"></i>
-
-                <p>هدايا</p>
-
-            </div>
-            <div class="food category-btn" data-category="أكلاتنا">
-
-                <i class="fa-solid fa-gift"></i>
-
-                <p>أكلاتنا</p>
-
-            </div>
-
-        </div>
-
-        <div id="productsContainer"></div>
-
-    </section>
-
-</body>
-
-</html>
