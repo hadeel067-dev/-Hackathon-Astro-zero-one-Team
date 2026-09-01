@@ -97,9 +97,13 @@ main {
     color: #053930;
     margin: 6px;
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 5e982de552a3901f640b2f02ae77e0e8cc725b34
 
 }
-/* hadeel  */
+
 footer{
     display: flex;
     flex-direction: row;
@@ -128,7 +132,7 @@ color: white;
 .enter{
     display: flex;
     flex-direction: row;
-    margin: -10;
+   margin: -20px;
     margin-top: 10px;
 }
 .center2{
@@ -144,8 +148,13 @@ color: white;
     align-items: center;
 }
 .photo{ margin-bottom: 15px;}
+<<<<<<< HEAD
 span{ color: white;
 }
+=======
+span{ color: white;}
+
+>>>>>>> 5e982de552a3901f640b2f02ae77e0e8cc725b34
 
 
 .mainlogo {
@@ -183,5 +192,12 @@ span{ color: white;
 .fa-arrow-left {
     margin-top: 6px;
 }
+<<<<<<< HEAD
 
 
+=======
+#send{
+    background-color: #053930;
+    border: 1px solid #053930;
+}
+>>>>>>> 5e982de552a3901f640b2f02ae77e0e8cc725b34
