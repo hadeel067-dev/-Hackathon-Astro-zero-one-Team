@@ -93,7 +93,7 @@ main {
     color: #053930;
     margin: 6px;
 
-<<<<<<< HEAD
+
 
 }
 /* hadeel  */
@@ -142,8 +142,8 @@ color: white;
 }
 .photo{ margin-bottom: 15px;}
 span{ color: white;}
-=======
-}
+
+
 
 
 .mainlogo {
@@ -181,8 +181,29 @@ span{ color: white;}
 .fa-arrow-left {
     margin-top: 6px;
 }
-<<<<<<< HEAD
+.cards{
+    display:flex;
+    justify-content:space-evenly ;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    transition: 0.3s;
+    transform: translateY(-7px);
 
-=======
->>>>>>> 94412db6be11f438f478ac11b291957c43e1533b
->>>>>>> ca758d8403d0d3e0827d4b0911770f731cbb0dac
+
+}
+.card{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    transition: 0.3s;
+    transform: translateY(-7px);
+    width:200px;
+    height: 150px;
+   
+    min-height: 45px;
+
+}
+.cards img{
+    margin-bottom: 50px;
+    width:100%;
+}
+
+
+
