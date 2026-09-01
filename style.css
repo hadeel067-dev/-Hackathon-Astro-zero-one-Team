@@ -93,10 +93,10 @@ main {
     color: #053930;
     margin: 6px;
 
-<<<<<<< HEAD
+
 
 }
-/* hadeel  */
+
 footer{
     display: flex;
     flex-direction: row;
@@ -125,7 +125,7 @@ color: white;
 .enter{
     display: flex;
     flex-direction: row;
-    margin: -10;
+   
     margin-top: 10px;
 }
 .center2{
@@ -142,8 +142,7 @@ color: white;
 }
 .photo{ margin-bottom: 15px;}
 span{ color: white;}
-=======
-}
+
 
 .mainlogo {
     display: flex;
@@ -180,4 +179,4 @@ span{ color: white;}
 .fa-arrow-left {
     margin-top: 6px;
 }
->>>>>>> 94412db6be11f438f478ac11b291957c43e1533b
+
