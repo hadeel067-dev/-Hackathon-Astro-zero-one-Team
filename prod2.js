@@ -1,91 +1,120 @@
-const productsContainer = document.getElementById("productsContainer");
+<!DOCTYPE html>
 
-function displayProducts(productsToDisplay) {
+<html lang="ar" dir="rtl">
 
-    productsContainer.innerHTML = "";
+<head>
 
-    productsToDisplay.forEach(product => {
+    <meta charset="UTF-8">
 
-        const card = document.createElement("div");
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        card.classList.add("product-card");
+    <title>المنتجات | أثر</title>
 
-        card.innerHTML = `
-            <img src="${product.Image}" alt="${product.name}">
+   
+    <link rel="stylesheet" href="style3.css">
 
-            <h3>${product.name}</h3>
+    <script src="./products.js" defer></script>
+    <script src="./prod2.js" defer></script>
+    <script src="./main.js" defer></script>
+    <script src="./cart.js" defer></script>
+    <script src="./divid.js" defer></script>
 
-            <p>${product.description}</p>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
 
-            <strong>$${product.price}</strong>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
+</head>
 
-            <button class="add-to-card">
-                أضف إلى السلة
-                <i class="fa-solid fa-cart-shopping"></i>
-            </button>
-        `;
+<body>
 
-        productsContainer.appendChild(card);
+    <!DOCTYPE html>
+<html lang="ar" dir="rtl">
 
-        const addButton = card.querySelector(".add-to-card");
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>اثر</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./style2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
+    <script src="./main.js" defer></script>
+</head>
 
-        addButton.onclick = function () {
+<body>
+    <!-- mayar header  -->
 
-            let cart = JSON.parse(localStorage.getItem("cart")) || [];
-
-       
-            cart.push(product);
-
-            addButton.onclick = function () {
-
-                let cart = JSON.parse(localStorage.getItem("cart")) || [];
-
-                let existingProduct = cart.find(item => item.id === product.id);
-
-                if (existingProduct) {
-
-                    existingProduct.quantity += 1;
-
-                } else {
-
-                    cart.push({
-                        ...product,
-                        quantity: 1
-                    });
-
-                }
-
-                localStorage.setItem("cart", JSON.stringify(cart));
-
-                updateCartCount();
-            };
-
-       
-            localStorage.setItem("cart", JSON.stringify(cart));
-
-            updateCartCount();
-        };
-    });
-}
+    <header>
+        <div class="right-bar">
+            <a class="logo"><i class="fa-brands fa-pagelines" style="color: rgb(6, 60, 49);"></i>
+               جوف
+            </a>
+        </div>
 
 
+        <ul class="navbar">
+            <li><a href="./home.html" class="home-active">الرئيسية</a></li>
+            <li><a href="./products.html">المنتجات</a></li>
+           
+        </ul>
+        <div class="search">
+            <input type="text" id="search-box" placeholder="ابحث عن المنتج..." />
+            <button id="search-button"><i class="fa-solid fa-magnifying-glass"
+                    style="color: rgb(6, 60, 49);"></i></button>
+        </div>
 
-function updateCartCount() {
-
-    let cart = JSON.parse(localStorage.getItem("cart")) || [];
-
-    const cartCount = document.getElementById("cart-count");
-
-    if (cartCount) {
-        cartCount.innerText = cart.length;
-    }
-}
+        <div class="profile">
+            <i class="fa-solid fa-user" style="color: rgb(6, 60, 49);"></i>
+            <a href="cart.html">
+                <i class="fa-solid fa-cart-shopping " style="color: rgb(6, 60, 49);"></i>
+                <span id="cart-count">0</span>
+            </a>
+            
+        </div>
 
 
+    </header>
+    <section class="top-prod">
 
-displayProducts(products);
+        <h3>تسوّق حسب الفئة</h3>
 
+        <div class="categories">
 
-updateCartCount();
+            <div class="cloths category-btn" data-category="ملابس">
 
+                <i class="fa-solid fa-vest"></i>
 
+                <p>ملابس</p>
+
+            </div>
+
+            <div class="bags category-btn" data-category="إكسسوارات">
+
+                <i class="fa-solid fa-bag-shopping"></i>
+
+                <p>إكسسوارات</p>
+
+            </div>
+
+            <div class="gifts category-btn" data-category="هدايا">
+
+                <i class="fa-solid fa-gift"></i>
+
+                <p>هدايا</p>
+
+            </div>
+            <div class="food category-btn" data-category="أكلاتنا">
+
+                <i class="fa-solid fa-gift"></i>
+
+                <p>أكلاتنا</p>
+
+            </div>
+
+        </div>
+
+        <div id="productsContainer"></div>
+
+    </section>
+
+</body>
+
+</html>
