@@ -1,8 +1,6 @@
 
 const products = [
 
-<<<<<<< HEAD
-=======
 
     {
         id: 1,
@@ -46,7 +44,7 @@ const products = [
 
     }
     ,
->>>>>>> 77bbc3be6926345e4cd3e673259c38b5590a356c
+
 
     {
         id: 6,
@@ -55,13 +53,10 @@ const products = [
         category: "أكلاتنا",
         Image: "./imgs/Zeytin ile Zeytinyağı.jfif",
         description: "زيت زيتون برائحة الارض"
-<<<<<<< HEAD
-    }{
-=======
-    }
-    ,
+
+    },
     {
->>>>>>> 77bbc3be6926345e4cd3e673259c38b5590a356c
+
         id: 7,
         name: "مخللات",
         price: 5.5,
