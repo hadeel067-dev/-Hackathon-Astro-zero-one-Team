@@ -1,12 +1,16 @@
-const searchInput=document.querySelector("search-button");
+const searchInput = document.querySelector("#search-box");
 
- searchInput.addEventListener("input",()=>{
-const searchValue=searchInput.value.trim();
-const result= products.filter(products=>{
-    products.name;
-   searchInput.includes(searchValue);
-})
-   displayProducts(result);
- })
- 
+if (searchInput) {
 
+   searchInput.addEventListener("input", () => {
+
+      const searchValue =
+         searchInput.value.trim();
+
+      const results = products.filter(product =>
+         product.name.includes(searchValue)
+      );
+
+      displayProducts(results);
+   });
+}
