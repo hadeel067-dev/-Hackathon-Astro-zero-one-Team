@@ -184,3 +184,31 @@ span{ color: white;}
     background-color: #053930;
     border: 1px solid #053930;
 }
+.icon{
+   display: flex;
+   flex-direction: row;
+   color: #053930; 
+   font-size: larger;
+  padding: 10px;
+}
+.category{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+}
+.cate{
+    border-radius: 10px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    width: 100px;
+    height: 100px;
+}
+.clothes{ background-color: #E3E4DC;}
+.bags{ background-color: #F7EBDF;}
+.gifts{ background-color: ;}
+.
