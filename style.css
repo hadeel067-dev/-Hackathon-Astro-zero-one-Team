@@ -191,8 +191,11 @@ span{
 
 .cards{
     display:flex;
-    justify-content:space-around ;
+    justify-content:center ;
     margin-bottom: 20px;
+    align-items:center ;
+    row-gap: 50px;
+
 
 
 }
@@ -201,7 +204,7 @@ span{
     transition: 0.3s;
     transform: translateY(-7px);
     width:350px;
-    height: fit-content;
+    height:450px ;
    border-radius: 19px;
     min-height: 45px;
     box-sizing: border-box;
@@ -209,7 +212,7 @@ span{
     padding: 5px;
 }
 .card img{
-    margin-bottom: 60px;
+    
     width:100%;
     margin-bottom:2px;
     border-radius: 19px;
