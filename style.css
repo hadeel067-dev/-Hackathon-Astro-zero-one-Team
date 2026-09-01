@@ -11,6 +11,7 @@
     scroll-behavior: smooth;
     scroll-padding-top: 2rem;
     text-decoration: none;
+  
 
 }
 
@@ -28,6 +29,7 @@ header {
     transition: 0.5s;
     background-color: #FAFAF6;
     color: #243B37;
+    
 
 }
 
@@ -142,7 +144,7 @@ footer{
     left: 0;
     bottom:0;
     justify-content: space-between;
-    
+    margin-top: 20px;
     padding: 15px;
     background-color: #053930;
     position: fixed;
@@ -189,7 +191,7 @@ span{
 
 
 
-.cards{
+/* .cards{
     display:flex;
     justify-content:center ;
     margin-bottom: 20px;
@@ -237,7 +239,7 @@ span{
 }
 .card i{
     margin-right: 5px;
-}
+} */
 .h3{
     color:#053930
 }
@@ -280,7 +282,72 @@ span{
 .bags{ background-color: #F7EBDF;}
 .gifts{ background-color: #E9EEF2;}
 .food{ background-color: #F7E5E1;}
+.list {
 
+    
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    padding: 30px;
+    justify-items: center;
 
+}
+.product-card {
+    width: 260px;
+    background: white;
+    border-radius: 15px;
+    padding: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: 0.3s;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.product-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.product-card h3 {
+    font-size: 18px;
+    margin: 15px 0 8px;
+    color: rgb(6, 60, 49);
+}
+
+.product-card p {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.6;
+    min-height: 45px;
+}
+
+.product-card strong {
+    display: block;
+    font-size: 20px;
+    color: rgb(6, 60, 49);
+    margin: 12px 0;
+}
+
+.product-card .add-to-card {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(6, 60, 49);
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.product-card .add-to-card:hover {
+    background-color: rgb(9, 85, 70);
+}
 
 

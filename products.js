@@ -62,7 +62,7 @@ const products = [
         name: "مخللات",
         price: 5.5,
         category: "أكلاتنا",
-        Image: "./imgs/تنزيل.jfif",
+        Image: "./imgs/مخلل.jfif",
         description: "مخللات شهيّة"
     }
     , {

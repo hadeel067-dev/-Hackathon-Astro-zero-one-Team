@@ -87,5 +87,3 @@ displayProducts(products);
 
 
 updateCartCount();
-
-
