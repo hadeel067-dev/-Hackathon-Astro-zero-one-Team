@@ -16,6 +16,5 @@ categoryButtons.forEach(button => {
 
 })
 
-}
-
 })
+
