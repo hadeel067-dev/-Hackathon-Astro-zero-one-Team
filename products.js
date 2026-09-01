@@ -1,6 +1,6 @@
 
 const products = [
-  
+
 
     {
         id: 6,
@@ -9,8 +9,7 @@ const products = [
         category: "أكلاتنا",
         Image: "./imgs/Zeytin ile Zeytinyağı.jfif",
         description: "زيت زيتون برائحة الارض"
-    }
-    {
+    }{
         id: 7,
         name: "مخللات",
         price: 5.5,
