@@ -1,3 +1,6 @@
+
+
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;60e;700&display=swap');
 
 * {
@@ -60,6 +63,9 @@ header {
     cursor: pointer;
     font-size: 25px;
 }
+.profile span{
+    color: #053930;
+}
 
 .logo {
     font-size: 30px;
@@ -91,7 +97,57 @@ main {
     color: #053930;
     margin: 6px;
 
+
 }
+/* hadeel  */
+footer{
+    display: flex;
+    flex-direction: row;
+    left: 0;
+    bottom:0;
+    justify-content: space-between;
+    
+    padding: 15px;
+    background-color: #053930;
+    position: fixed;
+    width: 100%;
+}
+.web{
+    color: white;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+}
+.right{
+color: white;
+}
+.center1 a{ color: white;}
+.center1{
+    margin-top: 25px;
+}
+.enter{
+    display: flex;
+    flex-direction: row;
+    margin: -10;
+    margin-top: 10px;
+}
+.center2{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    color: white;
+}
+.left{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    align-items: center;
+}
+.photo{ margin-bottom: 15px;}
+span{ color: white;}
+=======
+}
+
 
 .mainlogo {
     display: flex;
@@ -128,3 +184,8 @@ main {
 .fa-arrow-left {
     margin-top: 6px;
 }
+<<<<<<< HEAD
+
+=======
+>>>>>>> 94412db6be11f438f478ac11b291957c43e1533b
+>>>>>>> ca758d8403d0d3e0827d4b0911770f731cbb0dac
