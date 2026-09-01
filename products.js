@@ -1,7 +1,6 @@
 
 const products = [
 
-
     {
         id: 1,
         name: "سوار يدوي بتصاميم تراثية",
@@ -15,7 +14,7 @@ const products = [
         name: "شمعة عطرية برائحة اللافندر",
         price: 10,
         category: "هدايا",
-        Image: "./imgs/Vela Aromática Lavanda _ Lumina Collection.jfif",
+        Image: "./imgs/شمعه.jfif",
         description: "شمعة عطرية برائحة اللافندر "
     },
     {
@@ -39,7 +38,7 @@ const products = [
         name: "ثوب فلسطيني بجودة عالية ",
         price: 70,
         category: "ملابس",
-        Image: "./imgs/download (3).jpg",
+        Image: "./imgs/ثوب.jpg",
         description: "ثوب فلسطيني بتطريز يدوي مميز"
 
     }
@@ -54,7 +53,9 @@ const products = [
         Image: "./imgs/Zeytin ile Zeytinyağı.jfif",
         description: "زيت زيتون برائحة الارض"
 
-    },
+
+    }
+    ,
     {
 
         id: 7,
@@ -85,10 +86,8 @@ const products = [
         name: "كوفيه فلسطينية",
         price: 20,
         category: "ملابس",
-        Image: "imgs/Black and White Hirbawi® Kufiya.jfif",
+        Image: "./imgs/Black and White Hirbawi® Kufiya.jfif",
         description: "كوفية فلسطينية تقليدية"
     }
-
-
 
 ]
