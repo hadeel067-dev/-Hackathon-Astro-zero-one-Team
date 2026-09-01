@@ -39,7 +39,7 @@ const products = [
         category: "ملابس",
         Image: "./imgs/download (3).jpg",
         description: "ثوب فلسطيني بتطريز يدوي مميز"
-   
+    }
 
 
 ]

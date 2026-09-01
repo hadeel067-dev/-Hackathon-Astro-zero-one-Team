@@ -4,8 +4,9 @@ const searchInput=document.querySelector("search-button");
 const searchValue=searchInput.value.trim();
 const result= products.filter(products=>{
     products.name;
-    .includes(searchValue);
+   searchInput.includes(searchValue);
 })
    displayProducts(result);
  })
+ 
 
