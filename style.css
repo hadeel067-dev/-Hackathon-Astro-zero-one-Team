@@ -149,6 +149,7 @@ color: white;
 }
 .photo{ margin-bottom: 15px;}
 <<<<<<< HEAD
+<<<<<<< HEAD
 span{ color: white;
 }
 =======
@@ -156,6 +157,9 @@ span{ color: white;}
 
 >>>>>>> 5e982de552a3901f640b2f02ae77e0e8cc725b34
 
+=======
+span{ color: white;} 
+>>>>>>> 446dc78be07c50fea8103a7e61e1651688e42191
 
 .mainlogo {
     display: flex;
@@ -193,11 +197,43 @@ span{ color: white;}
     margin-top: 6px;
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 
 =======
+=======
+
+.cards{
+    display:flex;
+    justify-content:space-evenly ;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    transition: 0.3s;
+    transform: translateY(-7px);
+
+
+}
+.card{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    transition: 0.3s;
+    transform: translateY(-7px);
+    width:200px;
+    height: 150px;
+   
+    min-height: 45px;
+
+}
+.cards img{
+    margin-bottom: 50px;
+    width:100%;
+}
+
+>>>>>>> 446dc78be07c50fea8103a7e61e1651688e42191
 #send{
     background-color: #053930;
     border: 1px solid #053930;
 }
+<<<<<<< HEAD
 >>>>>>> 5e982de552a3901f640b2f02ae77e0e8cc725b34
+=======
+
+>>>>>>> 446dc78be07c50fea8103a7e61e1651688e42191
