@@ -46,7 +46,7 @@ header {
 
 .navbar a:hover,
 .navbar .home-active,
-.navbar .products.html {
+.navbar .products-active{
     background: #243B37;
     border-radius: 5rem;
     color: #F6FAFF;
@@ -58,6 +58,7 @@ header {
     align-items: center;
     column-gap: 0.5rem;
     cursor: pointer;
+    font-size: 25px;
 }
 
 .logo {
