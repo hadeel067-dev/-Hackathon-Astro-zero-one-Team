@@ -144,8 +144,7 @@ color: white;
     align-items: center;
 }
 .photo{ margin-bottom: 15px;}
-span{ color: white;}
-=======
+span{ color: white;
 }
 
 
@@ -184,8 +183,5 @@ span{ color: white;}
 .fa-arrow-left {
     margin-top: 6px;
 }
-<<<<<<< HEAD
 
-=======
->>>>>>> 94412db6be11f438f478ac11b291957c43e1533b
->>>>>>> ca758d8403d0d3e0827d4b0911770f731cbb0dac
+
