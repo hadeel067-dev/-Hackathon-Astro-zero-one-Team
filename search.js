@@ -1,16 +1,20 @@
 const searchInput = document.querySelector("#search-box");
+searchInput.addEventListener("input",
+     () => {
+          const searchValue = searchInput.value.trim();
+          const results = products.filter(product => product.name.includes(searchValue)); displayProducts(results);
+     });
+const categoryButtons = document.querySelectorAll(".category-btn");
+categoryButtons.forEach(button => {
+     button.addEventListener("click",
+          () => {
+               const category = button.dataset.category;
+               if (category === "الكل") {
+                    displayProducts(products);
 
-if (searchInput) {
-
-   searchInput.addEventListener("input", () => {
-
-      const searchValue =
-         searchInput.value.trim();
-
-      const results = products.filter(product =>
-         product.name.includes(searchValue)
-      );
-
-      displayProducts(results);
-   });
-}
+               } else {
+                    const results = products.filter(product => product.category === category);
+                    displayProducts(results);
+               }
+          });
+});
