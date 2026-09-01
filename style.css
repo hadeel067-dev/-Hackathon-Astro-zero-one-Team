@@ -96,7 +96,7 @@ main {
 
 
 }
-/* hadeel  */
+
 footer{
     display: flex;
     flex-direction: row;
@@ -125,7 +125,7 @@ color: white;
 .enter{
     display: flex;
     flex-direction: row;
-    margin: -10;
+   margin: -20px;
     margin-top: 10px;
 }
 .center2{
@@ -141,10 +141,7 @@ color: white;
     align-items: center;
 }
 .photo{ margin-bottom: 15px;}
-span{ color: white;}
-
-
-
+span{ color: white;} 
 
 .mainlogo {
     display: flex;
@@ -181,6 +178,7 @@ span{ color: white;}
 .fa-arrow-left {
     margin-top: 6px;
 }
+
 .cards{
     display:flex;
     justify-content:space-evenly ;
@@ -205,5 +203,8 @@ span{ color: white;}
     width:100%;
 }
 
-
+#send{
+    background-color: #053930;
+    border: 1px solid #053930;
+}
 
