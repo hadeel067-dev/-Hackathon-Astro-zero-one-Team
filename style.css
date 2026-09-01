@@ -91,3 +91,41 @@ main {
     margin: 6px;
 
 }
+
+
+.mainlogo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 7px;
+    margin-right: -600px;
+    flex-wrap: wrap;
+
+}
+
+.mainlogo h1 {
+    font-size: 60px;
+}
+
+.mainlogo p {
+    font-size: 20px;
+    text-wrap: wrap;
+
+}
+
+.btn-main {
+    font-size: 18px;
+    font-weight: 600;
+    height: 50px;
+    width: 160px;
+    border: 2px #053930;
+    border-radius: 10px;
+    background: #053930;
+    color: #F8FAFE;
+
+}
+
+.fa-arrow-left {
+    margin-top: 6px;
+}
+
