@@ -125,7 +125,7 @@ color: white;
 .enter{
     display: flex;
     flex-direction: row;
-   
+   margin: -20px;
     margin-top: 10px;
 }
 .center2{
@@ -180,12 +180,7 @@ span{ color: white;}
 .fa-arrow-left {
     margin-top: 6px;
 }
-<<<<<<< HEAD
-
-=======
-<<<<<<< HEAD
-
-=======
->>>>>>> 94412db6be11f438f478ac11b291957c43e1533b
->>>>>>> ca758d8403d0d3e0827d4b0911770f731cbb0dac
->>>>>>> fa90ba1fee7b776c1491d906f0ff5cfda094c25e
+#send{
+    background-color: #053930;
+    border: 1px solid #053930;
+}
