@@ -1,11 +1,143 @@
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;60e;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+    scroll-padding-top: 2rem;
+    text-decoration: none;
+
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    padding: 20px 100px;
+    transition: 0.5s;
+    background-color: #FAFAF6;
+    color: #243B37;
+
+}
+
+.navbar {
+    display: flex;
+    column-gap: 0.5rem;
+    list-style: none;
+
+
+}
+
+.navbar a {
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    color:#243B37;
+
+}
+
+.navbar a:hover,
+.navbar .home-active,
+.navbar .products.html {
+    background: #243B37;
+    border-radius: 5rem;
+    color: #F6FAFF;
+    transition: background 0.5s;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    column-gap: 0.5rem;
+    cursor: pointer;
+}
+
+.logo {
+    font-size: 30px;
+    font-weight: 500;
+
+
+}
+header a {
+    color:#243B37;
+
+}
+
+main {
+    margin-top: 85px;
+}
+
+.hero {
+    background-image: url("./imgs/e0b8332595f9c6183aef6a813014c915.jpg");
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    height: 350px;
+    padding-top: 100px;
+    display: flex;
+    border-radius: 20px;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    color: #053930;
+    margin: 6px;
+
+
+}
 /* hadeel  */
 footer{
     display: flex;
     flex-direction: row;
-    left: 0%;
-    bottom:0%;
+    left: 0;
+    bottom:0;
     justify-content: space-between;
-    margin: 20px;
+    
     padding: 15px;
     background-color: #053930;
+    position: fixed;
+    width: 100%;
 }
+.web{
+    color: white;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+}
+.right{
+color: white;
+}
+.center1 a{ color: white;}
+.center1{
+    margin-top: 25px;
+}
+.enter{
+    display: flex;
+    flex-direction: row;
+    margin: -10;
+    margin-top: 10px;
+}
+.center2{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    color: white;
+}
+.left{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    align-items: center;
+}
+.photo{ margin-bottom: 15px;}
+span{ color: white;}
